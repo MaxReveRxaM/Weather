@@ -1,0 +1,357 @@
+body{
+	background: #488ceb;
+	font-family: sans-serif;
+}
+
+.container{
+	padding: 100px;
+}
+
+.laptop{
+	display: unset;
+}
+
+.mobile{
+	display: none;
+}
+
+.location{
+	float: left;
+}
+
+.up_window{
+	width: 420px;
+	background: #fff;
+	position: absolute;
+	top: 112px;
+	padding: 30px;
+	font-size: 27px;
+	border-radius: 10px;
+}
+
+.up_window > input{
+	width: 50px;
+	position: relative;
+	top: 1px;
+	right: -18px;
+	font-size: 27px;
+	color: #009bff;
+	background: #fff;
+	border: none;
+	float: right;
+	cursor: pointer;
+}
+
+.current_location > span{
+	color: #fff;
+	font-size: 50px;
+}
+
+.change_location > a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	opacity: 0.6;
+}
+
+.change_location > img{
+	width: 18px;
+	margin-bottom: -3px;
+}
+
+.change_location > a + img + a{
+	position: relative;
+	top: 1px;
+}
+
+.measuring_units{
+	float: right;
+	width: 70px;
+	height: 28px;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.measuring_units > div > span{
+	color: #ffffff4f;
+}
+
+.measuring_units > .active{
+	background: #ffffff4f;
+}
+
+.measuring_units > .active > span{
+	color: #fff!important;
+	font-weight: bold!important;
+}
+
+#celsius{
+	float: left;
+	padding: 5px 12px 5px 12px;
+}
+
+#celsius > span{
+	cursor: pointer;
+}
+
+#fahrenheit{
+	float: right;
+	padding: 5px 12px 5px 12px;
+}
+
+#fahrenheit > span{
+	cursor: pointer;
+}
+
+.main_block{
+	width: 400px;
+	height: 200px;
+	margin-top: 14%;
+	margin-bottom: 14%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	text-align: center;
+}
+
+.temperature > img{
+	width: 140px;
+	margin-bottom: -18px;
+}
+
+.temperature > span{
+	color: #fff;
+	font-size: 150px;
+}
+
+.weather_type > span{
+	color: white;
+	opacity: 0.8;
+	font-size: 23px;
+}
+
+.useful_information > div{
+	float: left;
+	width: 25%;
+}
+
+.useful_information > div > span{
+	width: 100%;
+	float: left;
+	color: #fff;
+	font-size: 18px;
+	opacity: 0.6;
+}
+
+.useful_information > div > span + span{
+	width: 100%;
+	margin-top: 10px;
+	float: left;
+	color: #fff;
+	font-size: 25px;
+	opacity: unset;
+}
+
+@media only screen and (max-width: 425px) {
+	.container{
+		padding: 10px;
+	}
+
+	.laptop{
+		display: none;
+	}
+
+	.mobile{
+		display: unset;
+	}
+
+	.up_window{
+		display: none;
+	}
+
+	.current_location > span {
+		color: #fff;
+		font-size: 30px;
+	}
+
+	.change_location{
+		margin-top: 10px;
+	}
+
+	.change_location > a {
+		text-decoration: none;
+		color: #fff;
+		font-size: 17px;
+		opacity: 0.6;
+	}
+
+	.change_location > img {
+		width: 15px;
+		margin-bottom: -3px;
+		margin-left: 15px;
+		margin-right: 5px;
+		margin-top: 5px;
+	}
+
+	.change_location > a + img + a {
+		position: relative;
+		top: 2px;
+	}
+
+	.measuring_units {
+		float: right;
+		width: 70px;
+		height: 28px;
+		border: 1px solid #fff;
+		border-radius: 8px;
+		overflow: hidden;
+		margin-top: -62px;
+	}
+
+	.main_block {
+		width: 100%;
+		height: 160px;
+		margin-top: 60%;
+		margin-bottom: 30%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 5px;
+		text-align: center;
+	}
+
+	.temperature > img {
+		width: 80px;
+		margin-bottom: 0px;
+	}
+
+	.temperature > span {
+		color: #fff;
+		font-size: 80px;
+	}
+
+	.weather_type > span {
+		color: white;
+		opacity: 0.8;
+		font-size: 20px;
+	}
+
+	.useful_information > div {
+		float: left;
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+	.useful_information > div > span {
+		color: #fff;
+		font-size: 14px;
+		opacity: 0.6;
+	}
+
+	.useful_information > div > span + br + span {
+		color: #fff;
+		font-size: 16px;
+		opacity: unset;
+	}
+
+	.useful_information > div > span + span{
+		width: 100%;
+		margin-top: 5px;
+		float: left;
+		color: #fff;
+		font-size: 20px;
+		opacity: unset;
+	}
+}
+
+@media only screen and (max-width: 366px) {
+	.container{
+		padding: 10px;
+	}
+
+	.laptop{
+		display: none;
+	}
+
+	.mobile{
+		display: unset;
+	}
+
+	.current_location > span {
+		color: #fff;
+		font-size: 30px;
+	}
+
+	.change_location > a {
+		text-decoration: none;
+		color: #fff;
+		font-size: 14px;
+		opacity: 0.6;
+	}
+
+	.change_location > img {
+		width: 12px;
+		margin-bottom: -3px;
+		margin-left: 10px;
+	}
+
+	.measuring_units {
+		float: right;
+		width: 70px;
+		height: 28px;
+		border: 1px solid #fff;
+		border-radius: 8px;
+		overflow: hidden;
+		margin-top: -55px;
+	}
+
+	.main_block {
+		width: 100%;
+		height: 160px;
+		margin-top: 50%;
+		margin-bottom: 30%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 5px;
+		text-align: center;
+	}
+
+	.temperature > img {
+		width: 80px;
+		margin-bottom: 0px;
+	}
+
+	.temperature > span {
+		color: #fff;
+		font-size: 80px;
+	}
+
+	.weather_type > span {
+		color: white;
+		opacity: 0.8;
+		font-size: 18px;
+	}
+
+	.useful_information > div {
+		float: left;
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+	.useful_information > div > span{
+		width: 100%;
+		float: left;
+		color: #fff;
+		font-size: 14px;
+		opacity: 0.6;
+	}
+
+	.useful_information > div > span + span{
+		width: 100%;
+		margin-top: 5px;
+		float: left;
+		color: #fff;
+		font-size: 16px;
+		opacity: unset;
+	}
+}
